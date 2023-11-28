@@ -1,0 +1,129 @@
+/* Header */
+@import url(/css/header.css);
+
+/* Footer */
+@import url(/css/footer.css);
+
+*,
+*::before
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Main */
+
+main {
+    height: 125vh;
+    width: 100%;
+    background-image: url(/assets/img/fondo-bateria2.jpeg);
+    background-size: cover;
+          -webkit-animation: slidein 100s;
+          animation: slidein 100s;
+  
+          -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  
+          -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:2200px; }
+    to {background-position: -100px 0px;background-size:2000px;}
+    }
+    
+    @keyframes slidein {
+    from {background-position: top;background-size:2200px; }
+    to {background-position: -100px 0px;background-size:2000px;}
+    
+    }
+    
+    .center
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 3px;
+    }
+
+
+
+/* First section */
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.titulo img {
+    height: 70px;
+    margin-left: 10px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.titulo img:hover {
+    transform: scale(1.2);
+}
+
+.titulo h1 {
+    color: white;
+    margin-right: 100px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
+}
+
+/* second section */
+
+.drums {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 600px;
+}
+
+.drums img {
+    background: rgba(242,208,59,0.3);
+    padding: 45px;
+}
+
+/* third section */
+
+.container-texto {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    width: 860px;
+    color:white;
+    font-family: "Poppins", sans-serif;
+}
+
+.texto p {
+    line-height: 60px;
+}
+
+.texto ul {
+    margin-left: 20px;
+}
+
+.ultimo-elemento {
+    margin-top: 30px
+}
+

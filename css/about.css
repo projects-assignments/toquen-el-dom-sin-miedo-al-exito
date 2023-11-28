@@ -1,0 +1,330 @@
+/* Header */
+@import url(/css/header.css);
+
+/* Footer */
+@import url(/css/footer.css);
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333333;
+    padding-bottom: 100px;
+    
+}
+
+
+/* Head */
+
+.titulo {
+    height: 50vh;
+    width: 100%;
+    background: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}    
+
+.titulo h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6.25rem;
+    color: #ffff;
+    margin-bottom: 40px;
+}
+
+.titulo .p1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #ffff;
+    margin-bottom: 40px;
+}
+
+.titulo .p2 { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #ffff;
+    line-height: 30px;
+}
+
+/* Sections */
+.biblio {
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    
+}
+
+/* Isadora */
+.isadora {
+    height: 100%;
+    width: 50%;
+    background-image: url(/assets/img/isadora.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.color {
+    background: rgba(242, 208, 59, 1);
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    transition: .3s linear;
+    
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-isadora {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:left;
+    text-wrap: balance;
+}
+
+.texto-isadora p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.43rem;
+    line-height: 48px;
+    color: #ffff;
+    margin-left: 20px;
+}
+
+/* Daniela */
+
+.daniela {
+    height: 100%;
+    width: 50%;
+    background-image: url(/assets/img/dani.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.color {
+    background: rgba(242, 208, 59, 1);
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    transition: .3s linear;
+    
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-daniela {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:right;
+    text-wrap: balance;
+}
+
+.texto-daniela p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.43rem;
+    line-height: 48px;
+    color: #ffff;
+    margin-right: 20px;
+}
+
+/* Pamela */
+
+.pamela {
+    height: 100%;
+    width: 50%;
+    background-image: url(/assets/img/pamela.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.color {
+    background: rgba(242, 208, 59, 1);
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    transition: .3s linear;
+    
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-pamela {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:left;
+    text-wrap: balance;
+}
+
+.texto-pamela p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.43rem;
+    line-height: 48px;
+    color: #ffff;
+    margin-left: 20px;
+}
+
+/* Isiah */
+
+.isiah {
+    height: 100%;
+    width: 50%;
+    background-image: url(/assets/img/isiah.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.color {
+    background: rgba(242, 208, 59, 1);
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    transition: .3s linear;
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-isiah {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:right;
+    text-wrap: balance;
+}
+
+.texto-isiah p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.43rem;
+    line-height: 48px;
+    color: #ffff;
+    margin-right: 20px;
+}
+
+/* Nacho */
+
+.nacho {
+    height: 100%;
+    width: 50%;
+    background-image: url(/assets/img/nacho.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.color {
+    background: rgba(242, 208, 59, 1);
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    transition: .3s linear;
+    
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-nacho {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:left;
+    text-wrap: balance;
+}
+
+.texto-nacho p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.43rem;
+    line-height: 48px;
+    color: #ffff;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding-bottom: 50px;
+    }
+    
+    .titulo h1 {
+        font-size: 50px;
+    }
+
+    .titulo .p1,
+    .titulo .p2 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    
+    .biblio {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .isadora,
+    .daniela,
+    .pamela,
+    .isiah,
+    .nacho {
+        height: 100%;
+        width: 50%;
+        max-width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .texto-isadora,
+    .texto-daniela,
+    .texto-pamela,
+    .texto-isiah,
+    .texto-nacho {
+        height: 100%;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+}
