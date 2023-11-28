@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <title>piano</title>
+</head>
+
+<body>
+  <h1>PIANO</h1>
+  <div class="wrapper">
+    <header>
+      <h2>TDM PIANO</h2>
+      <div class="column volume-slider">
+        <span>Volume</span><input type="range" min="0" max="1" value="0.5" step="any"/>
+      </div>
+      <div class="column keys-checkbox">
+        <span>Keys OFF<input type="checkbox" checked /> ON</span>
+      </div>
+    </header>
+    <ul class="piano-keys">
+      <li class="key white" data-key="a"><span>a</span></li>
+      <li class="key black" data-key="w"><span>w</span></li>
+      <li class="key white" data-key="s"><span>s</span></li>
+      <li class="key black" data-key="e"><span>e</span></li>
+      <li class="key white" data-key="d"><span>d</span></li>
+      <li class="key white" data-key="f"><span>f</span></li>
+      <li class="key black" data-key="t"><span>t</span></li>
+      <li class="key white" data-key="g"><span>g</span></li>
+      <li class="key black" data-key="y"><span>y</span></li>
+      <li class="key white" data-key="h"><span>h</span></li>
+      <li class="key black" data-key="u"><span>u</span></li>
+      <li class="key white" data-key="j"><span>j</span></li>
+      <li class="key white" data-key="k"><span>k</span></li>
+      <li class="key black" data-key="o"><span>o</span></li>
+      <li class="key white" data-key="l"><span>l</span></li>
+      <li class="key black" data-key="p"><span>p</span></li>
+      <li class="key white" data-key=";"><span>;</span></li>
+    </ul>
+  </div>
+
+  <p>Para tocar el piano virtual:
+    Haz clic en una tecla blanca o negra para reproducir la nota correspondiente.
+  <br>
+  <br>  ¡Utiliza el teclado de tu ordenador para tocar el piano virtual!
+    Presiona la tecla correspondiente para reproducir la nota. 
+    Las teclas negras están asociadas con las letras W, E, T, Y, U, O, P.
+    Las teclas blancas están asociadas con las letras A, S, D, F, J, K, L, ;
+    
+  <br>  
+  <br>  Experimenta con la combinación de teclas para crear acordes.
+    Puedes presionar varias teclas al mismo tiempo para producir acordes más complejos.
+    Ajusta el volumen de tu dispositivo para disfrutar de una experiencia auditiva más completa.
+    </p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
