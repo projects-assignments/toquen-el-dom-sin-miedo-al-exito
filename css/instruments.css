@@ -1,5 +1,5 @@
 /* Header */
-@import "/css/header.css";
+@import url(/css/header.css);
 
 /* Footer */
 @import url(/css/footer.css);
@@ -11,23 +11,31 @@
     margin: 0;
 }
 
+:root {
+    --color-primario: #333333;
+    --bg-primario: #333333;
+    --bg-secundario: #f2d03b;
+    --text-color-primario: #ffff;
+    --text-color-secundario: #000000;
+}
 
 
 
 .head {
     height: 40vh;
     width: 100%;
-    background: #333333;
+    background: var(--bg-primario);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 10vh;
 }
 
 .head h1 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 6.25rem;
-    color: white;
+    color: var(--text-color-primario);
     margin-bottom: 30px;
 }
 
@@ -35,7 +43,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 1.875rem;
-    color: white;
+    color: var(--text-color-primario);
 }
 
 /* First section */
@@ -66,7 +74,7 @@
 .piano h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 3.75rem;
-    color: #ffff;
+    color: var(--text-color-primario);
     
 }
 
@@ -74,7 +82,7 @@
     font-family: "Poppins", sans-serif;
     font-size: 1.875rem;
     margin-top: 30px;
-    color: #ffff;
+    color: var(--text-color-primario);
     margin-left: 60px;
     font-weight: 300;
 }
@@ -85,7 +93,7 @@ button {
     font-size: 1.875rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    background: #F2D03B;
+    background: var(--bg-secundario);
     border-radius: 20px;
     margin-top: 30px;
     border: none;
@@ -94,8 +102,8 @@ button {
 }
 
 button:hover {
-    color: #F2D03B;
-    background: #333333;
+    color: var(--bg-secundario);
+    background: var(--bg-primario);
 }
 
 
@@ -127,14 +135,14 @@ button:hover {
 .bateria h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 60px;
-    color: #ffff;
+    color: var(--text-color-primario);
 }
 
 .bateria p {
     font-family: "Poppins", sans-serif;
     font-size: 30px;
     margin-top: 30px;
-    color: #ffff;
+    color: var(--text-color-primario);
     margin-left: 50px;
     font-weight: 300;    
 }
@@ -167,14 +175,14 @@ button:hover {
 .bajo h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 60px;
-    color: #ffff;
+    color: var(--text-color-primario);
 }
 
 .bajo p {
     font-family: "Poppins", sans-serif;
     font-size: 30px;
     margin-top: 30px;
-    color: #ffff;
+    color: var(--text-color-primario);
     margin-left: 60px;
     font-weight: 300;
 }

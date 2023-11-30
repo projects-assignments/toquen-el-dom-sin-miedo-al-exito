@@ -5,13 +5,22 @@
     padding: 0;
 }
 
+:root {
+    --color-primario: #333333;
+    --bg-primario: #333333;
+    --bg-secundario: #f2d03b;
+    --text-color-primario: #ffff;
+    --text-color-secundario: #000000;
+    --footer-color: #000000;
+}
+
 /* Footer */
 
 footer {
     height: 150px;
     width: 100%;
     background: black;
-    color: white;
+    color: #ffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
