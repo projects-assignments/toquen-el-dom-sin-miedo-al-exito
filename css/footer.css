@@ -22,11 +22,12 @@ footer {
     background: black;
     color: #ffff;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer p {
+    transform: translateY(80%);
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 100px;
@@ -34,3 +35,50 @@ footer p {
     font-weight: 300;
     font-size: .75rem;
 }
+.social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-right: 150px;;
+    }
+    
+    .fb { 
+        grid-area: 1 / 1 / 2 / 2;
+        width: 24px;
+        height: 24px;
+        background: url("/assets/img/social/fb.svg");
+        background-size: cover;
+    }
+    .fb:hover {
+        background: url("/assets/img/social/fb-hover.svg");
+        background-size: cover;
+        transition: 200ms ease-in-out;
+    }
+    .ig { 
+        grid-area: 1 / 2 / 2 / 3;
+        width: 24px;
+        height: 24px;
+        background: url("/assets/img/social/ig.svg");
+        background-size: cover;
+    }
+    .ig:hover {
+        background: url("/assets/img/social/ig-hover.svg");
+        background-size: cover;
+        transition: 200ms ease-in-out;
+    }
+    .x-tw { 
+        grid-area: 1 / 3 / 2 / 4;
+        width: 24px;
+        height: 24px;
+        background: url("/assets/img/social/x.svg");
+        background-size: cover;
+    }
+    .x-tw:hover {
+        background: url("/assets/img/social/x-hover.svg");
+        background-size: cover;
+        transition: 200ms ease-in-out;
+    }
