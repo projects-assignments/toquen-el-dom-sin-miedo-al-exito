@@ -16,15 +16,17 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 1;
+    box-shadow: 0 2px 2px black;
 }
 
 .logo {
     margin-left: 100px;
-    height: 10vh;
+    height: auto;
 }
 
 .logo img {
-    height: 90px;
+    height: 85px;
 }
 
 nav {
