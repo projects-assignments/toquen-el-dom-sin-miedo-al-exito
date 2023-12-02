@@ -102,9 +102,89 @@ h1{
         align-items: center;
         height: 600px;
        }
-      
-       .text-container {
-         font-family: "Poppins", sans-serif;
+       
+    .animation {
+        box-shadow: 0 10px 10px 0 #F2A649;
+        opacity: 0.5;
+    }
+
+    .button {
+        position: absolute;
+        outline: none;
+        border: 1vw solid rgba(0, 0, 0, 0);
+        font-size: 5rem;
+        font-family: Poppins;
+        text-transform: uppercase;
+        line-height: 15vw;
+        font-weight: 100;
+        color: transparent;
+        display: inline-block;
+        width:  200px;
+        height: 200px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .a {
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 265px;
+        width:  250px;
+        height: 250px;
+    }
+
+    .s {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 960px;
+      width:  240px;
+      height: 240px;
+    }
+
+    .d {
+      position: absolute;
+      margin-top: 150px;
+      margin-left: 536px;
+      width:  195px;
+      height: 195px;
+    }
+
+    .f {
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 775px;
+        width:  195px;
+        height: 195px;
+    }
+    
+    .j {
+        position: absolute;
+        margin-top: 350px;
+        margin-left: 556px;
+        width:  195px;
+        height: 195px;
+    }
+
+    .k {
+        position: absolute;
+        margin-top: 320px;
+        margin-left: 345px;
+        width:  220px;
+        height: 220px;
+    }
+
+    .l {
+        position: absolute;
+        margin-top: 390px;
+        margin-left: 875px;
+        width:  170px;
+        height: 170px;
+      }
+    
+    .text-container {
+        font-family: "Poppins", sans-serif;
         font-size: 1.438rem;
         color: #fff;
         display: flex;
