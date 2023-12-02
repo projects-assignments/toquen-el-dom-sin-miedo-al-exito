@@ -305,3 +305,16 @@ main {
     color: var(--text-color-primario);
     margin-left: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    /* Estilos para resoluciones de pantalla más pequeñas */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .elemento {
+      width: 100%;
+    }
+  }
