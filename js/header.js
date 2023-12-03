@@ -1,32 +1,71 @@
 var header = document.getElementById("miHeader");
+var initialHeaderHeight = header.clientHeight; // Guardar la altura inicial del encabezado
 
 window.addEventListener("scroll", function() {
     if (window.scrollY > 0) {
-        header.classList.add("pequeno");// Hace más peque
-        header.classList.remove("animado"); // Remueve la animación
-        header.style.height = "10vh"; // Altura
-        header.style.width = "40%"; // Tamaño el header
-        header.style.marginLeft = 0; // Alineación a la izquierda
-    }else {
-        header.classList.remove("pequeno");
-        header.style.width = "100%"; // Ancho completo al hacer scroll hacia arriba del todo
-        header.style.justifyContent = "space.between"; 
-}});
+        header.classList.add("pequeno");// Agregar la clase "pequeno"
+        header.classList.remove("animado");// Remover la clase "animado"
+        header.style.height = initialHeaderHeight + "px"; // Restaurar la altura inicial del encabezado
+        header.style.width = "50%"; // Ajustar el ancho
+        header.style.logo.marginLeft = "0px";
+        header.style.justifyContent = "flex-end";
+        header.style.Left = 0; // Ajustar el margen
+    } else {
+        header.classList.remove("pequeno"); // Remover la clase "pequeno"
+        header.style.width = "100%"; // Ajustar el ancho
+        header.style.justifyContent = "space-between"; // Ajustar el margen
+    }
+});
 
+document.addEventListener("click", function(event) { // Evento de click en el documento
+    if (!header.contains(event.target)) { // Verificar si el elemento clickeado no es el encabezado
+        header.classList.remove("pequeno"); // Remover la clase "pequeno"
+        header.style.width = "100%"; // Ajustar el ancho
+        header.style.justifyContent = ""; // Ajustar el margen
+    }
+});
 
-document.addEventListener("click", function(event) {
-    if (!header.contains(event.target)) {
-        header.classList.remove("pequeno");
+header.addEventListener("click", function() {
+    header.classList.toggle("animado");
+
+    if (!header.classList.contains("animado")) {
         header.style.width = "100%";
-        header.style.justifyContent = "";
     }
 })
 
 
-header.addEventListener("click", function() {
-    header.classList.toggle("animado"); // toogle animado al hacer click
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navList = document.querySelector('.nav-list');
 
-if (!header.classList.contains("animado")) { // verifica la clase animago si no está presente
-    header.style.width = "100%"; // Si no está presente, el ancho vuelve al 100%
-}
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('active');
+    navList.classList.toggle('show');
 });
+
+document.addEventListener('click', (event) => {
+    if (!navList.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+        hamburgerMenu.classList.remove('active');
+        navList.classList.remove('show');
+    }
+});
+
+// const header = document.querySelector('header')
+
+// function disableWidthAnimationOnSmallScreens() {
+//     const windowWidth = window.innerWidth;
+//     const header = document.querySelector('header');
+//     const hamburgerMenu = document.querySelector('.hamburger-menu');
+//     if (windowWidth <= 768) {
+//       header.style.transition = "none";
+//       hamburgerMenu.classList.add('active');
+//       navList.classList.add('show');
+
+//     } else {
+//       header.style.transition = "";
+//       hamburgerMenu.classList.remove('active');
+//       navList.classList.remove('show');
+//   }
+// }
+// // Llama a la función al cargar la página y al cambiar el tamaño de la ventana
+// window.addEventListener('load', disableAnimationOnSmallScreens);
+// window.addEventListener('resize', disableAnimationOnSmallScreens);
