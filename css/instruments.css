@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 .head h1 {
@@ -39,7 +39,7 @@
     margin-bottom: 30px;
 }
 
-.head p {
+.subtitle {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 1.875rem;
@@ -68,7 +68,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(51, 51, 51, .7);
+    background: rgb(51, 51, 51, .6);
 }
 
 .piano h2 {
@@ -78,13 +78,14 @@
     
 }
 
-.piano p {
+.texto-piano  {
     font-family: "Poppins", sans-serif;
     font-size: 1.875rem;
     margin-top: 30px;
     color: var(--text-color-primario);
-    margin-left: 60px;
     font-weight: 300;
+    text-align: center;
+    text-wrap: balance;
 }
 
 button {
@@ -129,7 +130,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(51, 51, 51, .7);
+    background: rgb(51, 51, 51, .6);
 }
 
 .bateria h2 {
@@ -138,13 +139,14 @@ button:hover {
     color: var(--text-color-primario);
 }
 
-.bateria p {
+.texto-bateria {
     font-family: "Poppins", sans-serif;
     font-size: 30px;
     margin-top: 30px;
     color: var(--text-color-primario);
-    margin-left: 50px;
-    font-weight: 300;    
+    font-weight: 300;
+    text-align: center;
+    text-wrap: balance;    
 }
 
 /* Third section */
@@ -169,7 +171,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(51, 51, 51, .7);
+    background: rgb(51, 51, 51, .6);
 }
 
 .bajo h2 {
@@ -178,12 +180,90 @@ button:hover {
     color: var(--text-color-primario);
 }
 
-.bajo p {
+.texto-bajo {
     font-family: "Poppins", sans-serif;
     font-size: 30px;
     margin-top: 30px;
     color: var(--text-color-primario);
-    margin-left: 60px;
     font-weight: 300;
+    text-align: center;
+    text-wrap: balance;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        padding-top: 5vh;
+    }
+
+    .head {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        font-display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .head h1 {
+        font-size: 3.375rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        text-wrap: balance;
+        line-height: 30px;
+    }
+
+    .piano {
+        width: 100%;
+    }
+
+    .piano h2 {
+        font-size: 3rem;
+    }
+
+    .texto-piano {
+        font-size: 1.5rem;
+    }
+
+    .bateria {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bateria h2 {
+        font-size: 3rem;
+    }
+
+    .texto-piano {
+        font-size: 1.5rem;
+        text-wrap: balance;
+    }
+
+    .bajo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bajo h2 {
+        font-size: 3rem;
+    }
+
+    .texto-bajo {
+        font-size: 1.5rem;
+        text-wrap: balance;
+    }
 }
 

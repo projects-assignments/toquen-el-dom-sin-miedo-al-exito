@@ -6,8 +6,10 @@ window.addEventListener("scroll", function() {
         header.classList.add("pequeno");// Agregar la clase "pequeno"
         header.classList.remove("animado");// Remover la clase "animado"
         header.style.height = initialHeaderHeight + "px"; // Restaurar la altura inicial del encabezado
-        header.style.width = "40%"; // Ajustar el ancho
-        header.style.marginLeft = 0; // Ajustar el margen
+        header.style.width = "50%"; // Ajustar el ancho
+        header.style.logo.marginLeft = "0px";
+        header.style.justifyContent = "flex-end";
+        header.style.Left = 0; // Ajustar el margen
     } else {
         header.classList.remove("pequeno"); // Remover la clase "pequeno"
         header.style.width = "100%"; // Ajustar el ancho
@@ -46,3 +48,24 @@ document.addEventListener('click', (event) => {
         navList.classList.remove('show');
     }
 });
+
+// const header = document.querySelector('header')
+
+// function disableWidthAnimationOnSmallScreens() {
+//     const windowWidth = window.innerWidth;
+//     const header = document.querySelector('header');
+//     const hamburgerMenu = document.querySelector('.hamburger-menu');
+//     if (windowWidth <= 768) {
+//       header.style.transition = "none";
+//       hamburgerMenu.classList.add('active');
+//       navList.classList.add('show');
+
+//     } else {
+//       header.style.transition = "";
+//       hamburgerMenu.classList.remove('active');
+//       navList.classList.remove('show');
+//   }
+// }
+// // Llama a la función al cargar la página y al cambiar el tamaño de la ventana
+// window.addEventListener('load', disableAnimationOnSmallScreens);
+// window.addEventListener('resize', disableAnimationOnSmallScreens);
