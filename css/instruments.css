@@ -190,6 +190,20 @@ button:hover {
     text-wrap: balance;
 }
 
+.piano a {
+    text-decoration: none;
+    color: var(--text-color-secundario);
+}
+.bateria a{
+    text-decoration: none;
+    color: var(--text-color-secundario);
+}
+
+.bajo a {
+    text-decoration: none;
+    color: var(--text-color-secundario);
+}
+
 
 @media screen and (max-width: 768px) {
     main {
