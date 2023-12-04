@@ -1,14 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@500&family=Poppins:wght@300&display=swap');
+@import url("/css/header.css");
+@import url("/css/footer.css") screen;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;600&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+main{
     display:flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -17,15 +18,34 @@ body{
     padding: 0 10px;
 }
 
+.titulo{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.titulo img{
+    height: 70px;
+    transition: .4s ease-in-out;
+    margin: 10%;
+
+}
+
+.titulo img:hover {
+    height: 90px;
+    
+}
+
 h1{
     display: flex;
     margin: 10%;
-    justify-content: space-between;
     color: #fff;
     font-family: "Bebas Neue";
     font-size: 6.25rem;
-   
 }
+
 .wrapper{
 border-radius: 20px;
 background: linear-gradient(rgba(135,81,4,1) 0%, rgba(223,142,27,1) 35% 96%, #000 4%);
@@ -146,7 +166,7 @@ header .column span {
     display: none;
 }
 
-p{
+.parrafo{
     margin: 10%;
     color: #fff;
     font-family: "Poppins";
@@ -176,6 +196,7 @@ p{
         height: 100px;
         width: 40px;
         margin: 0 -20px;
+        z-index: 0;
     }
     .piano-keys .white {
         height: 180px;

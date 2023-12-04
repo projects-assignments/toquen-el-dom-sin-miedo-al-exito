@@ -5,13 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/style.css" />
-  <title>piano</title>
-</head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
+  <title>piano</title>
+
+
+</head>
+<nav>
+            <ul class="nav-bar">
+            <li class="logo"><a href="index.html"><img src="/assets/img/Logo-black.png" alt="logo"></a></li>
+            <input type="checkbox" id="check">
+            <span class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instruments.html">Instrumentos</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <label for="check" class="close-menu" class="fas fa-times"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
 <body>
-  <h1>PIANO</h1>
-  <div class="wrapper">
-    <header>
+  <main>
+    <div class="titulo">   <h1>PIANO</h1> <img src ="\assets\img\ep_arrow-up-bold.png">
+    </div>
+ 
+      <div class="wrapper">
+      <header>
       <h2>TDM PIANO</h2>
       <div class="column volume-slider">
         <span>Volume</span><input type="range" min="0" max="1" value="0.5" step="any"/>
@@ -41,6 +62,7 @@
     </ul>
   </div>
 
+  <div class="parrafo">
   <p>Para tocar el piano virtual:
     Haz clic en una tecla blanca o negra para reproducir la nota correspondiente.
   <br>
@@ -54,8 +76,22 @@
     Puedes presionar varias teclas al mismo tiempo para producir acordes más complejos.
     Ajusta el volumen de tu dispositivo para disfrutar de una experiencia auditiva más completa.
     </p>
+  </div>
+
+  </main>
 
   <script src="script.js"></script>
-</body>
 
+  <footer>
+    <div>
+        <p>©2023 - Toquen el DOM. Escuela de música.<br>Av del Bogatell 82, 08005, Barcelona</p>
+    </div>
+    <div class="social">
+        <div class="fb"></div>
+        <div class="ig"></div>
+        <div class="x-tw"></div>
+    </div>
+</footer>
+
+</body>
 </html>
