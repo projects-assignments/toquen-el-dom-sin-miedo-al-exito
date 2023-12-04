@@ -1,10 +1,10 @@
-var numberOfButtons = document.querySelectorAll(".button").length;
+let numberOfButtons = document.querySelectorAll(".button").length;
 
-for (var j = 0; j < numberOfButtons; j++) {
+for (let j = 0; j < numberOfButtons; j++) {
 
     document.querySelectorAll(".button")[j].addEventListener("click", function(){
         
-        var buttonStyle = this.innerHTML;
+        let buttonStyle = this.innerHTML;
         sound(buttonStyle);
         animation(buttonStyle);
     });
@@ -18,37 +18,37 @@ for (var j = 0; j < numberOfButtons; j++) {
  function sound(key) {
     switch (key) {
         case "a":
-            var sound1 = new Audio("assets/drums/R8-Cl-Hi-Hat.wav");
+            let sound1 = new Audio("assets/drums/R8-Cl-Hi-Hat.wav");
             sound1.play();
             break;
 
             case "s":
-            var sound2 = new Audio("assets/drums/R8-Crash.wav");
+            let sound2 = new Audio("assets/drums/R8-Crash.wav");
             sound2.play();
             break;
 
             case "d":
-            var sound3 = new Audio("assets/drums/R8-Hi-Tom.wav");
+            let sound3 = new Audio("assets/drums/R8-Hi-Tom.wav");
             sound3.play();
             break;
 
             case "f":
-            var sound4 = new Audio("assets/drums/R8-Kick-1.wav");
+            let sound4 = new Audio("assets/drums/R8-Kick-1.wav");
             sound4.play();
             break;
 
             case "j":
-            var sound5 = new Audio("assets/drums/R8-Low-Tom.wav");
+            let sound5 = new Audio("assets/drums/R8-Low-Tom.wav");
             sound5.play();
             break;
 
             case "k":
-            var sound6 = new Audio("assets/drums/R8-Open-Hi-Hat.wav");
+            let sound6 = new Audio("assets/drums/R8-Open-Hi-Hat.wav");
             sound6.play();
             break;
 
             case "l":
-            var sound7 = new Audio("assets/drums/R8-Snare-1.wav");
+            let sound7 = new Audio("assets/drums/R8-Snare-1.wav");
             sound7.play();
             break;
 
@@ -57,7 +57,7 @@ for (var j = 0; j < numberOfButtons; j++) {
     }
  }
         function animation(currentKey) {
-            var activeButton = document.querySelector("." + currentKey);
+            let activeButton = document.querySelector("." + currentKey);
             activeButton.classList.add("animation");
 
             setTimeout(function() {
