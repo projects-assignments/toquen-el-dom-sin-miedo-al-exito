@@ -15,14 +15,17 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="/assets/img/Logo-black.png" alt="" class="logo">
-        </div>
         <nav>
-            <ul class="buttons">
-                <li><a class="link" href="index.html">Home</a></li>
-                <li><a class="link" href="instrumentos.html">Instrumentos</a></li>
-                <li><a class="link" href="quienessomos.html">Quiénes Somos</a></li>
+            <ul class="nav-bar">
+                <li class="logo"><a href="#"><img src="/assets/img/Logo-black.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Instrumentos</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <label for="check" class="close-menu" class="fas fa-times"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
         </nav>
     </header>
@@ -88,13 +91,13 @@
         <p>Para tocar el bajo virtual:</p>
         <p>Haz clic y mantén presionado sobre una cuerda y mueve de arriba a abajo para tocar.</p>
         <p>¡Utiliza el teclado de tu ordenador para tocar el bajo virtual!</p>
-        <ul> 
+        <ul>
             <li>Las cuerdas están asociadas a las teclas "A", "S", "D" y "F".</li>
             <li>Presiona y mantén presionada las teclas.</li>
             <li>Utiliza las teclas de flecha arriba y abajo.</li>
         </ul>
     </section>
-    
+
     <footer>
         <div>
             <p>©2023 - Toquen el DOM. Escuela de música.<br>Av del Bogatell 82, 08005, Barcelona</p>
