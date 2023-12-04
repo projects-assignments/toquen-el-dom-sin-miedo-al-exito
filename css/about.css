@@ -306,7 +306,7 @@ main {
     margin-left: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     main {
         display: flex;
         flex-direction: column;
@@ -363,7 +363,6 @@ main {
         height: auto;
     }
     .texto-isadora p {
-        margin:0;
         margin: 20px auto;
         font-size: 1rem;
     }
@@ -446,3 +445,22 @@ main {
         font-size: 1rem;
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .texto-isadora p{
+        font-size: 1rem;
+    }
+    .texto-daniela p{
+        font-size: 1rem;
+    }
+    .texto-pamela p{
+        font-size: 1rem;
+    }
+    .texto-isiah p{
+        font-size: 1rem;
+    }
+    .texto-nacho p{
+        font-size: 1rem;
+    }
+}
+    

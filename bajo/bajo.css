@@ -23,7 +23,22 @@ body{
   background-color: #333333;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-bottom: 10vh;
+}
+
+.container-bajo {
+  border: 2px solid green;
+  width: 60%;
+}
+
 .container-titulo {
+  border: 2px solid pink;
   height: 20vh;
   width: 100%;
   display: flex;
@@ -54,11 +69,15 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px 0 20px 170px;
+  width: 70%;
+  padding-left: 70px;
+  border: 2px solid red;
 }
 
 .container-texto p {
   padding: 10px;
+  text-wrap: balance;
+  line-height: 40px;
 }
 
  .container-texto ul li {
@@ -73,7 +92,8 @@ body{
   display: flex;
   flex-direction: column;
   background: #be975b;
-  width: 80%;
+  width: 100%;
+  height: auto;
   height: calc(var(--fretboard-height) *1px);
 
 }
@@ -83,6 +103,30 @@ body{
   height: 100%;
   display: flex;
   position: relative;
+}
+
+
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-15px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.string.clicked {
+  animation-name: wave;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
 
 .string::before {
@@ -117,22 +161,39 @@ body{
   border-image: linear-gradient(to left, #777, #bbb, #777)1 100%;
 }
 
+
 @media (max-width: 815px) {
+
+  .container-titulo {
+    width: 100%;
+    height: 200px;
+    padding-top: 30px;
+  }
+
+  .container-titulo h1 {
+    font-size: 3rem;
+    margin-right: 10px;
+  }
+
+  .container-titulo img {
+    margin-left: 0;
+    height: 60px;
+  }
+  .container-bajo {
+    width: 100%;
+    height: auto;
+    
+  }
+
   .fretboard{
-    margin: auto;
+    width: 100%;
+    height: 200px;
   }
 
   .container-texto{
-    display:inline;
+    width: 100%;
+    padding: 0;
   }
   
 }
 
-@media (max-width: 615px) {
-  .fretboard{
-    margin: auto;
-  }
-  .container-texto{
-    display:inline;
-  }
-  }

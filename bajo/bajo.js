@@ -60,3 +60,17 @@ document.addEventListener("keydown", function (event) {
         playSound(key);
     }
 });
+// Mejor código
+var strings = document.getElementsByClassName("string");
+
+Array.prototype.forEach.call(strings, function(string) {
+  string.addEventListener("mousedown", function() {
+    var audio = new Audio("sonido.mp3");
+    audio.play();
+    string.classList.add("clicked");
+  });
+
+  string.addEventListener("mouseup", function() {
+    string.classList.remove("clicked");
+  });
+});
