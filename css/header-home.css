@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color1: #ffff;
+    --color2: #333333;
+  }
+  
+  .nav-bar {
+    background: linear-gradient(175deg, rgba(51,51,51,1) 80%, rgba(248,248,248,1) 100%);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 12px 20px;
+    box-shadow: 0 3px 0 black;
+    z-index: 3;
+  }
+  
+  .logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+  }
+  .menu {
+    display: flex;
+  } 
+  .menu li {
+    padding-left: 30px;
+    margin-right: 50px;
+  }
+  .menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: .15s ease-in-out;
+    position: relative;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+  }
+  
+  .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color2);
+    transition: .15s ease-in-out;
+  }
+  
+  .menu li a:hover::after {
+    width: 100%;
+  }
+  .open-menu, .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+  }
+  
+  .open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  .close-menu {
+    top: 20px;
+    right: 20px;
+  }
+  #check {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      right: -100%;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--color2);
+      z-index: 100;
+      transition: .5s ease-in-out;
+    }
+
+    .nav-bar {
+      height: 60px;
+      position: fixed;
+      box-shadow: 0 2px 0 black;
+    }
+
+    .logo img {
+        width: 80px;
+        height: auto;
+        margin-left: 0px;
+      }
+    .menu li {
+      margin-top: 40px;
+    }
+    .menu li a {
+      padding: 10px;
+      color: var(--color1);
+    }
+    .open-menu, .close-menu {
+      display: block;
+    }
+    .close-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: var(--color1)
+    }
+
+    #check:checked ~ .menu {
+      right: 0;
+    }
+    
+  }
