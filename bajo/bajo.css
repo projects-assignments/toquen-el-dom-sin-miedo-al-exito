@@ -1,5 +1,5 @@
 @import url("/css/footer.css") screen;
-@import url("/css/header.css");
+@import url("/css/header.css") screen;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;600&display=swap');
 
 :root {
@@ -16,7 +16,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body{
@@ -54,7 +53,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px 0 20px 170px;
+  padding: 20px 0 20px 200px;
 }
 
 .container-texto p {
@@ -64,7 +63,7 @@ body{
  .container-texto ul li {
  content:"•";
   color: #fff;
-  margin-left: 20px;
+  margin-left: 50px;
 
 }
 
@@ -117,7 +116,7 @@ body{
   border-image: linear-gradient(to left, #777, #bbb, #777)1 100%;
 }
 
-@media (max-width: 815px) {
+@media (min-width: 768px) {
   .fretboard{
     margin: auto;
   }
@@ -128,7 +127,7 @@ body{
   
 }
 
-@media (max-width: 615px) {
+@media (max-width: 768px) {
   .fretboard{
     margin: auto;
   }
