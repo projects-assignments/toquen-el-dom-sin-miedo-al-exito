@@ -18,37 +18,37 @@ for (let j = 0; j < numberOfButtons; j++) {
  function sound(key) {
     switch (key) {
         case "a":
-            let sound1 = new Audio("assets/drums/R8-Cl-Hi-Hat.wav");
+            let sound1 = new Audio("assets/sounds/R8-Cl-Hi-Hat.wav");
             sound1.play();
             break;
 
             case "s":
-            let sound2 = new Audio("assets/drums/R8-Crash.wav");
+            let sound2 = new Audio("assets/sounds/R8-Crash.wav");
             sound2.play();
             break;
 
             case "d":
-            let sound3 = new Audio("assets/drums/R8-Hi-Tom.wav");
+            let sound3 = new Audio("assets/sounds/R8-Hi-Tom.wav");
             sound3.play();
             break;
 
             case "f":
-            let sound4 = new Audio("assets/drums/R8-Kick-1.wav");
+            let sound4 = new Audio("assets/sounds/R8-Kick-1.wav");
             sound4.play();
             break;
 
             case "j":
-            let sound5 = new Audio("assets/drums/R8-Low-Tom.wav");
+            let sound5 = new Audio("assets/sounds/R8-Low-Tom.wav");
             sound5.play();
             break;
 
             case "k":
-            let sound6 = new Audio("assets/drums/R8-Open-Hi-Hat.wav");
+            let sound6 = new Audio("assets/sounds/R8-Open-Hi-Hat.wav");
             sound6.play();
             break;
 
             case "l":
-            let sound7 = new Audio("assets/drums/R8-Snare-1.wav");
+            let sound7 = new Audio("assets/sounds/R8-Snare-1.wav");
             sound7.play();
             break;
 

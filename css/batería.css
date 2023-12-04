@@ -8,18 +8,20 @@
     margin: 0;
 }
 
-body{
+main{
     background-color: #333333;
     height: auto;
     width: 100%;
+    padding-top:10%;
 }
 
 .titulo-container{
   
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 150px;
-    margin: 20px 20px 0 0;
+    margin: 0;
     }
 
 .titulo-container img{
@@ -38,7 +40,7 @@ h1{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 100;
     margin-right: 100px;
-    font-size: 3.75rem;
+    font-size: 6.25rem;
     color: white;
     
 }
@@ -48,7 +50,7 @@ h1{
    position: relative;
    max-width: 100%;
    margin: 0 auto;
-   z-index: 0;
+   /* z-index: 0; */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -62,7 +64,7 @@ h1{
         max-width:100%;
         height: auto;
         margin: auto;
-        z-index: 2; 
+        /* z-index: 2;  */
 }
         
   .button{
@@ -86,7 +88,7 @@ h1{
         left: 23%;
         width: 15%;
         height: 45%;
-        z-index: 3;
+        /* z-index: 3; */
         border-radius: 50%;
     }
 
@@ -96,7 +98,7 @@ h1{
         left: 63%;
         width: 13%;
         height: 39%;
-        z-index: 3;
+        /* z-index: 3; */
         border-radius: 50%;
     }
 
@@ -106,7 +108,7 @@ h1{
         left: 38%;
         width: 11%;
         height: 32%;
-        z-index: 3;
+        /* z-index: 3; */
         border-radius: 50%;
     }
 
@@ -116,7 +118,7 @@ h1{
         left: 52%;
         width: 11%;
         height: 31%;
-        z-index: 3;
+        /* z-index: 3; */
         border-radius: 50%;
     }
     
@@ -180,25 +182,29 @@ h1{
         align-items: center;
         height: auto; 
     }
+    
+    .titulo-container img{
+        height: 50%;
+        margin-left: 10px;
+}
 
     h1{
-        font-size: 2rem;
-        text-align: center;
-        margin: 0;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 100;
+        font-size: 6.25rem;
+        color: white;
+        margin-right: 100px;
     }
 
-    .titulo-container img{
-      height: 50%;
-      margin-left: 10px;
-}
-.titulo-container img:hover{
-    height: auto;
-    transition: none;
+
+    .titulo-container img:hover{
+        height: auto;
+        transition: none;
 }
 
   }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1212px){
     .drums-container{
         display: flex;
         flex-direction: column;
@@ -210,14 +216,15 @@ h1{
     }
 }
 
-@media screen and (max-width: 768px){
-    .a {
-        position: absolute;
+
+@media screen and (max-width: 1212px){
+   .a {
+      
         top: 6%;
         left: 15%;
         width: 19%;
         height: 43%;
-    }
+    } 
 
     .s{
         top: 17%;
@@ -257,7 +264,7 @@ h1{
     .l {
         position: absolute;
         top: 54%;
-        left: 20%;
+        left: 23%;
         width: 15%;
         height: 34%;
 }
