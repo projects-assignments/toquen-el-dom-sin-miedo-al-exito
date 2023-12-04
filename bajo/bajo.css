@@ -48,13 +48,14 @@ main {
 
 .container-titulo h1 {
   font-family: "Bebas Neue";
-  font-size: 3.75rem;
+  font-size: 6.25rem;
   justify-content: center;
   margin-right: 100px;
   color: #ffff;
 }
 
 .container-titulo img {
+  height: 70px;
   margin-left: 70px;
   transition: .4s ease-in-out;
   cursor: pointer;
