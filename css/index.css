@@ -1,90 +1,91 @@
-@font-face {
-	font-family: "Bebas Neue";
-	src: url("/assets/fonts/BebasNeue-Regular.ttf");
-	}
-@font-face {
-	font-family: "Poppins";
-	src: url("/assets/fonts/Poppins-Light.ttf");
-}
+@import url("/css/header-home.css");
+@import url("/css/footer.css") screen;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;600&display=swap');
 *,
 *::before,
 *::after {
     padding: 0;
     margin: 0;
 }
-.logo-home {
-	height: 100px;
-	width: auto;
-	padding: 1rem;
-	margin-left: 5rem;
-}
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	height: 140px;
-	background: linear-gradient(175deg, rgba(51,51,51,1) 80%, rgba(248,248,248,1) 100%);
-
-}
-.buttons {
-	font-family: "Bebas Neue";
-	color: white;
-	font-size: 36px;
-	padding: 3rem;
-}
-.link {
-	padding: 1rem;
-	text-decoration: none;
-	color: white;
-	margin-left: 3rem;
-}
 .first-section {
 	width: 100%;
     height: 100vh;
 	display:flex;
 	align-items: center;
-	background-image: url("/assets/img/landing.png");
+	background-image: url("/assets/img/landing.jpg");
 	background-size: cover;
 	background-position: center center;
 }
-@media (width >= 1000px) {
-	nav {
-		display: block;
-		margin-right: 3rem;
-	}
+@media (min-width: 768px) {
 	.landing-description {
 		background-color: rgba(51, 51, 51, 0.9);
 		position: relative;
 		width: 500px;
 		height: 270px;
 	}
+	h1 {
+		margin-left: 4rem;
+	}
+	p {
+		margin-left: 4rem;
+	}
+	.third-section {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 0px;
+		row-gap: 0px;
+	}
 	.salome-wrap { 
 		grid-area: 1 / 1 / 2 / 2;
 		width: 33,33vw;
-		background: url("/assets/img/dani-hover.jpg");
 		background-position: center center;
 		background-size: cover;
-		transition: 500ms ease-in-out;
 	}
 	.salome-wrap:hover{
-		background: url("/assets/img/dani.jpg");
 		background-position: center center;
-		background-size: cover;
 		transition: 500ms ease-in-out;
+		background-size: cover;
 	}
 	
 .pamela-wrap { 
 	grid-area: 2 / 1 / 3 / 2;
-	background: url("/assets/img/pamela-hover.jpg");
+	background-position: center center;
 	background-size: cover;
-	transition: 500ms ease-in-out;
 }
 .pamela-wrap:hover{
-	background: url("/assets/img/pamela.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+.isadora-wrap { 
+	grid-area: 1 / 2 / 3 / 3;
+	height: 100vh;
+	background-position: center center;
+	background-size: cover;
+	background: url("/assets/img/isadora-hover.jpg");
+}
+.isiah-wrap { 
+	grid-area: 1 / 3 / 2 / 4;
+}
+.nacho-wrap { 
+	grid-area: 2 / 3 / 3 / 4;
+}
+.isadora-wrap:hover{
+	background: url("/assets/img/isadora-full.jpeg");
+	background-position: center center;
 	background-size: cover;
 	transition: 500ms ease-in-out;
 }
+.isiah-wrap:hover{
+	background-position: center center;
+	background-size: cover;
 }
-@media (width < 1000px){
+.nacho-wrap:hover{
+	background-position: center center;
+	background-size: cover;
+}
+}
+/* @media (min-width: 768px) and (max-width: 992px){
 	nav {
 		display: none;
 	}
@@ -95,48 +96,140 @@
 		width: 100%;
 		height: 270px;
 	}
+	h1{
+		margin-left: 1rem;
+	}
+	p{
+		margin-left: 1rem;
+	}
+	.third-section {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 0px;
+		row-gap: 0px;
+	}
 	.salome-wrap { 
 		grid-area: 1 / 1 / 2 / 2;
 		width: 33,33vw;
-		background: url("/assets/img/dani-hover.jpg");
 		background-position: right top;
-		background-size: cover;
-		transition: 500ms ease-in-out;
+
 	}
 	.salome-wrap:hover{
-		background: url("/assets/img/dani.jpg");
 		background-position: right top;
-		background-size: cover;
-		transition: 500ms ease-in-out;
+
 	}
 	.pamela-wrap { 
 		grid-area: 2 / 1 / 3 / 2;
-		background: url("/assets/img/pamela-hover.jpg");
 		background-size: cover;
 		background-position: center center;
-		transition: 500ms ease-in-out;
+
 	}
 	.pamela-wrap:hover{
-		background: url("/assets/img/pamela.jpg");
 		background-size: cover;
 		background-position: center center;
-		transition: 500ms ease-in-out;
+
 	}
+	.isadora-wrap { 
+		grid-area: 1 / 2 / 3 / 3;
+		height: 100vh;
+		background: url("/assets/img/isadora-hover.jpg");
+		background-position: center center;
+		background-size: cover;
+
+	}
+	.isiah-wrap { 
+		grid-area: 1 / 3 / 2 / 4;
+		background-position: center center;
+		background-size: cover;
+
+	}
+	.nacho-wrap { 
+		grid-area: 2 / 3 / 3 / 4;
+		background-position: center center;
+		background-size: cover;
+
+	}
+	.isadora-wrap:hover{
+		background: url("/assets/img/isadora-full.jpeg");
+		background-position: center center;
+		background-size: cover;
+	}
+	.isiah-wrap:hover{
+		background-position: center center;
+		background-size: cover;
+
+	}
+	.nacho-wrap:hover{
+		background-position: center center;
+		background-size: cover;
+
+	}
+} */
+@media (max-width: 768px) {
+	.landing-description {
+		background-color: rgba(51, 51, 51, 0.9);
+		position: relative;
+		transform: translateY(100%);
+		width: 100%;
+		height: 270px;
+	}
+	h1{
+		margin-left: 1rem;
+	}
+	p{
+		margin-left: 1rem;
+	}
+	.third-section {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		column-gap: 0px;
+		row-gap: 0px;
+		}
+		
+		.salome-wrap { 
+			grid-area: 1 / 1 / 2 / 3;
+			background-position: center center;
+			background-size: cover;
+		}
+		.pamela-wrap { 
+			grid-area: 2 / 1 / 3 / 2;
+			background: url("/assets/img/pamela-hover.jpg");
+			background-position: top right;
+			background-size: cover;
+		}
+		.isadora-wrap { 
+			grid-area: 2 / 2 / 3 / 3;
+			height: 50vh;
+			background: url("/assets/img/isadora-sq-hover.jpg");
+			background-position: top right;
+			background-size: cover;
+		}
+		.isadora-wrap:hover { 
+			background: url("/assets/img/isadora.jpg");
+			background-position: top right;
+			background-size: cover;
+		}
+		.isiah-wrap { 
+			grid-area: 3 / 1 / 4 / 2;
+		}
+		.nacho-wrap { 
+			grid-area: 3 / 2 / 4 / 3;
+		}
 }
 
 h1 {
 	font-family: "Bebas Neue";
 	color: white;
 	font-size: 60px;
-	margin-left: 4rem;
-	width: 500px;
+
 }
 p{
 	font-family: "Poppins";
 	font-weight: 300;
 	color: white;
 	font-size: 20px;
-	margin-left: 4rem;
 }
 .carousel {
 	width: 100%;
@@ -190,38 +283,48 @@ p{
 .carousel-button.next {
 	right: 1rem;
 }
-.third-section {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+.salome-wrap { 
+	background: url("/assets/img/dani-hover.jpg");
+	background-position: top right;
+	background-size: cover;
+	transition: 500ms ease-in-out;
 }
-
+.salome-wrap:hover{
+	background: url("/assets/img/dani.jpg");
+	background-position: top right;
+	background-size: cover;
+	transition: 500ms ease-in-out;
+}
+.pamela-wrap { 
+	background: url("/assets/img/pamela-hover.jpg");
+	background-position: top center;
+	background-size: cover;
+	transition: 500ms ease-in-out;
+}
+.pamela-wrap:hover{
+	background: url("/assets/img/pamela.jpg");
+	background-position: top center;
+	background-size: cover;
+	transition: 500ms ease-in-out;
+}
 .isadora-wrap { 
-	grid-area: 1 / 2 / 3 / 3;
-	height: 100vh;
-	background: url("/assets/img/isadora-hover.jpg");
 	background-position: center center;
 	background-size: cover;
 	transition: 500ms ease-in-out;
 }
 .isiah-wrap { 
-	grid-area: 1 / 3 / 2 / 4;
 	background: url("/assets/img/isiah-hover.jpg");
 	background-position: center center;
 	background-size: cover;
 	transition: 500ms ease-in-out;
 }
 .nacho-wrap { 
-	grid-area: 2 / 3 / 3 / 4;
 	background: url("/assets/img/nacho-hover.jpg");
 	background-position: center center;
 	background-size: cover;
 	transition: 500ms ease-in-out;
 }
 .isadora-wrap:hover{
-	background: url("/assets/img/isadora-full.jpeg");
 	background-position: center center;
 	background-size: cover;
 	transition: 500ms ease-in-out;
@@ -237,22 +340,4 @@ p{
 	background-position: center center;
 	background-size: cover;
 	transition: 500ms ease-in-out;
-}
-.third-section > img {
-	object-fit: cover;
-}
-footer {
-	background-color: black;
-	height: 150px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-footer p {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 50px;
-	font-family: "Poppins";
-	font-weight: 300;
-	font-size: 0.75rem;
 }
