@@ -1,5 +1,5 @@
-@import url("/css/header-home.css");
-@import url("/css/footer.css") screen;
+@import url("/css/header.css");
+@import url("/css/footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;600&display=swap');
 *,
 *::before,
@@ -14,11 +14,14 @@
 	align-items: center;
 	background-image: url("/assets/img/landing.jpg");
 	background-size: cover;
-	background-position: center center;
 }
+
 @media (min-width: 768px) {
+	.first-section{
+		background-position: center center;
+	}
 	.landing-description {
-		background-color: rgba(51, 51, 51, 0.9);
+		background:linear-gradient(176deg, rgba(242,166,73,0.8) 30%, rgba(243,222,160,0.8) 70%);
 		position: relative;
 		width: 500px;
 		height: 270px;
@@ -167,8 +170,11 @@
 	}
 } */
 @media (max-width: 768px) {
+	.first-section{
+		background-position: center center;
+	}
 	.landing-description {
-		background-color: rgba(51, 51, 51, 0.9);
+		background:linear-gradient(176deg, rgba(242,166,73,0.8) 30%, rgba(243,222,160,0.8) 70%);
 		position: relative;
 		transform: translateY(100%);
 		width: 100%;
@@ -221,14 +227,14 @@
 
 h1 {
 	font-family: "Bebas Neue";
-	color: white;
+	color: black;
 	font-size: 60px;
 
 }
-p{
+.landing-description p {
 	font-family: "Poppins";
 	font-weight: 300;
-	color: white;
+	color: black;
 	font-size: 20px;
 }
 .carousel {
