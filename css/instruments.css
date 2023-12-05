@@ -195,16 +195,25 @@ button:hover {
 .piano a {
     text-decoration: none;
     color: var(--text-color-secundario);
+    transition: .3s ease-in-out;
 }
 .bateria a{
     text-decoration: none;
     color: var(--text-color-secundario);
+    transition: .3s ease-in-out;
 }
 
 .bajo a {
     text-decoration: none;
     color: var(--text-color-secundario);
+    transition: .3s ease-in-out;
 }
+
+.piano a:hover, .bateria a:hover, .bajo a:hover {
+    color: var(--bg-secundario);
+    transition: .3s ease-in-out;
+}
+
 
 
 @media screen and (max-width: 768px) {
