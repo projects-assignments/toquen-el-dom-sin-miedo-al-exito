@@ -26,14 +26,14 @@ main {
     background: #333333;
     padding-bottom: 100px;
     height: auto;
-    padding-top: 10vh;   
+    padding-top: 5vh;   
 }
 
 
 /* Head */
 
 .titulo {
-    height: 50vh;
+    height: 40vh;
     width: 100%;
     background: #333333;
     display: flex;
@@ -41,6 +41,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 100px;
 }    
 
 .titulo h1 {
@@ -52,16 +53,20 @@ main {
 
 .titulo .p1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.43rem;
+    font-size: 1.875rem;
     color: var(--text-color-primario);
     margin-bottom: 40px;
+    
+    font-weight: 300;
+    text-wrap: balance;
 }
 
 .titulo .p2 { 
     font-family: 'Poppins', sans-serif;
-    font-size: 1.43rem;
+    font-size: 1.875rem;
     color: var(--text-color-primario);
-    line-height: 30px;
+    font-weight: 300;
+    text-wrap: balance;
 }
 
 /* Sections */
@@ -335,12 +340,12 @@ main {
     }
     
     .titulo .p1 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 28px;
     text-wrap: balance;
     }
     .titulo .p2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 28px;
     text-wrap: balance;
     }

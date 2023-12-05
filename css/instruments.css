@@ -19,7 +19,9 @@
     --text-color-secundario: #000000;
 }
 
-
+main {
+    background: #333333;
+}
 
 .head {
     height: 40vh;
@@ -36,7 +38,7 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 6.25rem;
     color: var(--text-color-primario);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .subtitle {
@@ -209,7 +211,7 @@ button:hover {
     main {
         flex-direction: column;
         height: auto;
-        padding-top: 5vh;
+        padding-top: 8vh;
     }
 
     .head {
@@ -232,6 +234,7 @@ button:hover {
         font-size: 1.2rem;
         text-wrap: balance;
         line-height: 30px;
+        margin-bottom: 10px;
     }
 
     .piano {

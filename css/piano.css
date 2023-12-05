@@ -44,7 +44,7 @@ h1{
     display: flex;
     margin-right: 100px;
     color: #fff;
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", sans-serif;
     font-size: 6.25rem;
 }
 
