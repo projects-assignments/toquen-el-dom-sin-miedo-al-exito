@@ -63,7 +63,7 @@ h1{
     background: linear-gradient(320deg, ·000, rgba(135,81,4,1) 0%, rgba(223,142,27,1) 35%);
     padding: 40px 40px;
     font-family: "Poppins";
-    width: 40%;
+    width: 60%;
 }
 
 .wrapper .container-piano{
@@ -137,7 +137,7 @@ h1{
 }
 
 .piano-keys .white {
-    width: 80px;
+    width: 120px;
     height: 240px;
     border-radius: 8px;
     border: 1px solid #000;
@@ -196,6 +196,7 @@ h1{
     align-items: center;
     text-wrap: balance;
     line-height: 40px;
+    font-weight: 300;
 }
 
 @media screen and (max-width: 815px) {
