@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --border-color: linear-gradient(
+        to right,
+        #ffff 0%,
+        #F2A649 100%
+    );
+    --circle-color:#333333;     
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #333333;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    background-image: conic-gradient(white 0%, #F2A649 50%);
+    border-radius: 100%;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    height: 165px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #333333;
+    box-shadow: inset 2px 2px 4px #767575;
+}
+
+
+
+
+.dom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    margin-left: 5px;
+}
+
+.dom h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: #ffff;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+
+.img {
+
+    height: 50px;
+    margin-bottom: 10px;
+    width: 40px;
+    background-image: url(/assets/img/music-icon.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.img:hover {
+    background-image: url(/assets/img/music-icon3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 40px;
+    z-index: 2;
+}
+
+.texto {
+    width: 125px;
+    z-index: 2;
+}
+
+.texto p {
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .circle {
+        height: 120px;
+        width: 120px;
+    }
+
+    .dom h2 {
+        font-size: 2rem;
+    }
+
+    .img {
+        height: 40px;
+        width: 30px;
+    }
+
+    .img:hover {
+        height: 40px;
+        width: 30px;
+    }
+
+    .texto {
+        width: auto;
+    }
+
+    /* Ajustes de la animación para dispositivos pequeños */
+    .circle::before {
+        height: 150px;
+        width: 150px;
+    }
+}
