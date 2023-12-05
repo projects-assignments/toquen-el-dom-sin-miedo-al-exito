@@ -186,7 +186,7 @@ h1{
 }
 
 .parrafo{
-    height: 350px;
+    height: auto;
     width: 60%;
     color: #fff;
     font-family: "Poppins", sans-serif;
