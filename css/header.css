@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --color1: #ffff;
+    --color2: #333333;
+  }
+  
+  .nav-bar {
+    background:linear-gradient(176deg, rgba(242,166,73,1) 30%, rgba(243,222,160,1) 70%);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 12px 20px;
+    box-shadow: 0 2px 0 rgb(0, 0, 0);
+    z-index: 10;
+  }
+  
+  .logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+  }
+  .menu {
+    display: flex;
+  } 
+  .menu li {
+    padding-left: 30px;
+    margin-right: 50px;
+  }
+  .menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color2);
+    text-align: center;
+    transition: .35s ease-in-out;
+    position: relative;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+  }
+  
+  .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color2);
+    transition: .35s ease-in-out;
+  }
+  
+  .menu li a:hover::after {
+    width: 100%;
+  }
+  .open-menu, .close-menu {
+    position: absolute;
+    color: var(--color2);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+  }
+  
+  .open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  .close-menu {
+    top: 20px;
+    right: 20px;
+  }
+  #check {
+    display: none;
+  }
+  @media (max-width: 610px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      right: -100%;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 999;
+      transition: .5s ease-in-out;
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+    }
+
+    .nav-bar {
+      height: 7vh;
+      position: fixed;
+    }
+
+    .logo img {
+        width: 80px;
+        height: auto;
+        margin-left: 0px;
+      }
+    .menu li {
+      margin-top: 40px;
+    }
+    .menu li a {
+      padding: 10px;
+      color: var(--color1);
+    }
+    .menu li a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: var(--color1);
+      transition: .15s ease-in-out;
+    }
+
+
+    .open-menu, .close-menu {
+      display: block;
+    }
+    .close-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: var(--color1);
+    }
+    #check:checked ~ .menu {
+      right: 0;
+    }
+    
+  }

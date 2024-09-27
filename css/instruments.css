@@ -1,0 +1,299 @@
+/* Header */
+@import url(/css/header.css);
+
+/* Footer */
+@import url(/css/footer.css);
+
+/* transition */
+@import url(/css/transition.css);
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primario: #333333;
+    --bg-primario: #0d0d0d;
+    --bg-secundario: #F2D03B;
+    --text-color-primario: #ffff;
+    --text-color-secundario: #000000;
+}
+
+main {
+    background: #333333;
+}
+
+
+.head {
+    height: 40vh;
+    width: 100%;
+    background: var(--bg-primario);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.head h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 6.25rem;
+    color: var(--text-color-primario);
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.875rem;
+    color: var(--text-color-primario);
+}
+
+/* First section */
+
+.container-piano {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-image: url(/assets/img/fondo-piano.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.piano {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(51, 51, 51, .6);
+}
+
+.piano h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.75rem;
+    color: var(--text-color-primario);
+    
+}
+
+.texto-piano  {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.875rem;
+    margin-top: 30px;
+    color: var(--text-color-primario);
+    font-weight: 300;
+    text-align: center;
+    text-wrap: balance;
+}
+
+button {
+    height: 70px;
+    width: 200px;
+    font-size: 1.875rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background: var(--bg-secundario);
+    border-radius: 50px;
+    margin-top: 30px;
+    border: none;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--bg-secundario);
+    background: var(--bg-primario);
+}
+
+
+/* Second section */
+
+.container-bateria {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(/assets/img/fondo-bateria.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bateria {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(51, 51, 51, .6);
+}
+
+.bateria h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    color: var(--text-color-primario);
+}
+
+.texto-bateria {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    color: var(--text-color-primario);
+    font-weight: 300;
+    text-align: center;
+    text-wrap: balance;    
+}
+
+/* Third section */
+
+.container-bajo {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(/assets/img/fondo-bajo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bajo {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(51, 51, 51, .6);
+}
+
+.bajo h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    color: var(--text-color-primario);
+}
+
+.texto-bajo {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    color: var(--text-color-primario);
+    font-weight: 300;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.piano a {
+    text-decoration: none;
+    color: var(--text-color-secundario);
+    transition: .3s ease-in-out;
+}
+.bateria a{
+    text-decoration: none;
+    color: var(--text-color-secundario);
+    transition: .3s ease-in-out;
+}
+
+.bajo a {
+    text-decoration: none;
+    color: var(--text-color-secundario);
+    transition: .3s ease-in-out;
+}
+
+.piano a:hover, .bateria a:hover, .bajo a:hover {
+    color: var(--bg-secundario);
+    transition: .3s ease-in-out;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        padding-top: 8vh;
+    }
+
+    .head {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        font-display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .head h1 {
+        font-size: 3.375rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        text-wrap: balance;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .piano {
+        width: 100%;
+    }
+
+    .piano h2 {
+        font-size: 3rem;
+    }
+
+    .texto-piano {
+        font-size: 1.5rem;
+    }
+
+    .bateria {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bateria h2 {
+        font-size: 3rem;
+    }
+
+    .texto-piano {
+        font-size: 1.5rem;
+        text-wrap: balance;
+    }
+
+    .bajo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bajo h2 {
+        font-size: 3rem;
+    }
+
+    .texto-bajo {
+        font-size: 1.5rem;
+        text-wrap: balance;
+    }
+}
+

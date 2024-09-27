@@ -1,0 +1,280 @@
+@import url("/css/header.css");
+@import url("/css/footer.css") screen;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;600&display=swap');
+@import url("/css/transition.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primario: #0d0d0d;
+}
+
+main{
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--bg-primario);
+    padding: 0 10px;
+    padding-bottom: 10vh;
+}
+
+.titulo{
+    height: 20vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.titulo img{
+    height: 70px;
+    transition: .4s ease-in-out;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.titulo img:hover {
+    transform: scale(1.2);
+    
+}
+
+h1{
+    display: flex;
+    margin-right: 100px;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 6.25rem;
+}
+
+.section-piano {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    border: 2px solid pink;
+    border-radius: 20px;
+    background: linear-gradient(rgba(135,81,4,1) 0%, rgba(223,142,27,1) 35% 96%, #000 4%);
+    background: linear-gradient(320deg, ·000, rgba(135,81,4,1) 0%, rgba(223,142,27,1) 35%);
+    padding: 40px 40px;
+    font-family: "Poppins";
+    width: 60%;
+}
+
+.wrapper .container-piano{
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-piano h2{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-piano .column {
+    display: flex;
+    align-items: center;
+
+}
+
+.container-piano .column span {
+    font-size: 1.20rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.volume-slider input {
+    accent-color: #f2a649;
+    outline: none;
+}
+
+.keys-checkbox {
+    width: 220px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.keys-checkbox input {
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    background: #333;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.keys-checkbox input::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: inherit;
+    top: 50%;
+    left:5px;
+    position:absolute;
+    background-color: #f2a649;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.keys-checkbox input:checked::before {
+    left:35px;
+    background: #ff7f00;
+}
+
+.piano-keys{
+    display:flex;
+    margin-top: 40px;
+}
+
+.piano-keys .white {
+    width: 120px;
+    height: 240px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: linear-gradient(rgb(224, 198, 164) 96%, rgba(196, 115, 15, 0.846) 3%);
+}
+
+.piano-keys .white.active{
+    box-shadow: inset -5px 5px 20px rgba(196, 115, 15, 0.846) ;
+    background: linear-gradient(rgb(224, 198, 164) 96%, rgba(196, 115, 15, 0.846) 3%);
+}
+
+.piano-keys .black {
+    width: 40px;
+    height: 160px;
+    margin: 0 -22px;
+    z-index: 2;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333,#000);
+}
+
+.piano-keys .black.active{
+    box-shadow: inset -5px 5px 20px rgba(196, 115, 15, 0.846) ;
+    background: linear-gradient(to bottom, #000, #434);
+}
+
+.piano-keys .key{
+    list-style: none;
+    color:#fff;
+    text-transform: uppercase;
+    position:relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.piano-keys span{
+    position:absolute;
+    bottom:20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.piano-keys .key.hide span{
+    display: none;
+}
+
+.parrafo{
+    height: auto;
+    width: 60%;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.438rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: balance;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 815px) {
+
+    .titulo {
+        width: 100%;
+        height: 200px;
+        padding-top: 30px;
+    }
+    .titulo h1 {
+        font-size: 3rem;
+    margin-right: 5px;
+    }
+
+    .titulo img {
+        margin-left: 0;
+        height: 60px;
+        
+    }
+    .wrapper{
+        padding: 25px;
+        width: 100%;
+    }
+
+    .wraper h2{
+        font-size: 1.5rem;
+    }
+    .container-piano{
+        flex-direction: column;
+    }
+    .container-piano :where(h2, .column){
+        margin-bottom: 13px;
+    }
+    .volume-slider input {
+        max-width: 100px;
+    }
+    .piano-keys {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        margin-top: 20px;
+    }
+    .piano-keys .key:where(:nth-child(9), :nth-child(10)) {
+        display: none;
+    }
+    .piano-keys .black {
+        height: 100px;
+        width: 40px;
+        z-index: 1;
+    }
+    .piano-keys .white {
+        height: 180px;
+        width: 60px;
+        z-index: 0;
+
+    }
+
+    .parrafo {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 615px) {
+    .piano-keys .key:nth-child(13),
+    .piano-keys .key:nth-child(14),
+    .piano-keys .key:nth-child(15),
+    .piano-keys .key:nth-child(16),
+    .piano-keys .key:nth-child(17) {
+        display: none;
+    }
+    .piano-keys .white {
+        width: 50px;
+    }
+}

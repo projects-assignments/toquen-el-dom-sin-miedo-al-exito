@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primario: #333333;
+    --bg-primario: #333333;
+    --bg-secundario: #f2d03b;
+    --text-color-primario: #ffff;
+    --text-color-secundario: #000000;
+    --footer-color: #000000;
+}
+
+/* Footer */
+
+@media (min-width: 768px) {
+    footer {
+        height: 125px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer p {
+        transform: translateY(100%);
+        margin-left: 100px;
+    }
+    .social {
+        align-items: flex-start;
+        margin-right: 150px;
+        margin-top: 3rem;
+    }
+}
+@media (max-width: 768px){
+    footer {
+        height: 150px;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    footer p {
+        margin-left: 0px;
+
+    }
+    .social {
+        align-items:center;
+        margin-right: 5px;
+        margin-top: 1.75rem;
+    }
+}
+
+footer {
+    width: 100%;
+    background: black;
+    color: #ffff;
+    display: flex;
+}
+
+footer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: .75rem;
+}
+.social {
+    display: flex;
+    }
+
+.fb {
+    width: 24px;
+    height: 24px;
+    margin-right: 2rem;
+    background: url("/assets/img/social/fb.svg");
+    background-size: cover;
+}
+.fb:hover {
+    background: url("/assets/img/social/fb-hover.svg");
+    background-size: cover;
+    transition: 200ms ease-in-out;
+}
+.ig {
+    width: 24px;
+    height: 24px;
+    margin-right: 2rem;
+    background: url("/assets/img/social/ig.svg");
+    background-size: cover;
+}
+.ig:hover {
+    background: url("/assets/img/social/ig-hover.svg");
+    background-size: cover;
+    transition: 200ms ease-in-out;
+}
+.x-tw {
+    width: 24px;
+    height: 24px;
+    background: url("/assets/img/social/x.svg");
+    background-size: cover;
+}
+.x-tw:hover {
+    background: url("/assets/img/social/x-hover.svg");
+    background-size: cover;
+    transition: 200ms ease-in-out;
+}

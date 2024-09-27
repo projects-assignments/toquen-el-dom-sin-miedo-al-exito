@@ -1,0 +1,482 @@
+/* Header */
+@import url(/css/header.css);
+
+/* Footer */
+@import url(/css/footer.css);
+
+@import url(/css/transition.css);
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primario: #333333;
+    --bg-primario: #0d0d0d;
+    --bg-secundario: #f2d03b;
+    --text-color-primario: #ffff;
+    --text-color-secundario: #000000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-primario);
+    padding-bottom: 100px;
+    height: auto;
+    padding-top: 5vh;   
+}
+
+
+/* Head */
+
+.titulo {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}    
+
+.titulo h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 6.25rem;
+    color: var(--text-color-primario);
+    margin-bottom: 40px;
+}
+
+.titulo .p1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+    color: var(--text-color-primario);
+    margin-bottom: 40px;
+    
+    font-weight: 300;
+    text-wrap: balance;
+}
+
+.titulo .p2 { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+    color: var(--text-color-primario);
+    font-weight: 300;
+    text-wrap: balance;
+}
+
+/* Sections */
+.biblio-isadora {
+    height: auto;
+    width: 80%;
+    display: flex;
+}
+
+/* Isadora */
+.isadora {
+    height: 600px;
+    width: 100%;
+    background-image: url(/assets/img/isadora.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.color {
+    background: var(--bg-secundario);
+    height: 600px;
+    width: 100%;
+    opacity: .4;
+    transition: .3s ease-in-out;
+    
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-isadora {
+    height: 600px;
+    width: 100%;
+    text-align:left;
+    text-wrap: balance;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-isadora p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    line-height: 48px;
+    color: var(--text-color-primario);
+    margin-left: 20px;
+}
+
+/* Daniela */
+
+.biblio-daniela {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.daniela {
+    height: 600px;
+    width: 100%;
+    background-image: url(/assets/img/dani.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.color {
+    background: var(--bg-secundario);
+    height: 600px;
+    width: 100%;
+    opacity: .4;
+    transition: .3s ease-in-out; 
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-daniela {
+    height: 600px;
+    width: 100%;
+    text-align:left;
+    text-wrap: balance;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-daniela p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    line-height: 48px;
+    color: var(--text-color-primario);
+    margin-right: 20px;
+}
+
+/* Pamela */
+
+.biblio-pamela {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: flex;
+}
+
+.pamela {
+    height: 600px;
+    width: 100%;
+    background-image: url(/assets/img/pamela.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.color {
+    background: var(--bg-secundario);
+    height: 600px;
+    width: 100%;
+    opacity: .4;
+    transition: .3s ease-in-out;   
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-pamela {
+    height: 600px;
+    width: 100%;
+    text-align:left;
+    text-wrap: balance;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-pamela p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    line-height: 48px;
+    color: var(--text-color-primario);
+    margin-left: 20px;
+}
+
+/* Isiah */
+
+.biblio-isiah {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.isiah {
+    height: 600px;
+    width: 100%;
+    background-image: url(/assets/img/isiah.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.color {
+    background: var(--bg-secundario);
+    height: 600px;
+    width: 100%;
+    opacity: .4;
+    transition: .3s ease-in-out;  
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-isiah {
+    height: 600px;
+    width: 100%;
+    text-align:left;
+    text-wrap: balance;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-isiah p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    line-height: 48px;
+    color: var(--text-color-primario);
+    margin-right: 20px;
+}
+
+/* Nacho */
+
+.biblio-nacho {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: flex;
+}
+
+.nacho {
+    height: 600px;
+    width: 100%;
+    background-image: url(/assets/img/nacho.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.color {
+    background: var(--bg-secundario);
+    height: 600px;
+    width: 100%;
+    opacity: .4;
+    transition: .3s ease-in-out;
+}
+
+.color:hover {
+    background: none;
+}
+
+.texto-nacho {
+    height: 600px;
+    width: 100%;
+    text-align:left;
+    text-wrap: balance;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-nacho p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    line-height: 48px;
+    color: var(--text-color-primario);
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #333333;
+        height: auto;
+        width: 100%;
+        padding-bottom: 50px;
+        padding-top: 10vh;
+
+    }
+    .titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+
+    }
+
+    .titulo h1 {
+        font-size: 3.375rem;
+    }
+    
+    .titulo .p1 {
+    font-size: 1.2rem;
+    line-height: 28px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .titulo .p2 {
+    font-size: 1.2rem;
+    line-height: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    }
+
+    .biblio-isadora {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      text-align: center;
+    }
+    .isadora {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .texto-isadora {
+        text-align: justify;
+        padding: 0 20px;
+        height: auto;
+    }
+    .texto-isadora p {
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+    .biblio-daniela {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      text-align: center;
+    }
+
+    .daniela {
+        box-sizing: border-box;
+        width: 100%;
+        background-size: cover;
+    }
+    .texto-daniela {
+        text-align: justify;
+        padding: 0 20px;
+        height: auto;
+
+    }
+    .texto-daniela p {
+        margin:0;
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+    .biblio-pamela {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      text-align: center;
+    }
+    .texto-pamela {
+        text-align: justify;
+        padding: 0 20px;
+        height: auto;
+    }
+    .texto-pamela p {
+        margin:0;
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+    .biblio-isiah {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      text-align: center;
+    }
+    .texto-isiah {
+        text-align: justify;
+        padding: 0 20px;
+        height: auto;
+    }
+    .texto-isiah p {
+        margin:0;
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+    .biblio-nacho {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      text-align: center;
+    }
+    .texto-nacho {
+        text-align: justify;
+        padding: 0 20px;
+        height: auto;
+    }
+    .texto-nacho p {
+        margin:0;
+        margin: 20px auto;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .texto-isadora p{
+        font-size: 1rem;
+    }
+    .texto-daniela p{
+        font-size: 1rem;
+    }
+    .texto-pamela p{
+        font-size: 1rem;
+    }
+    .texto-isiah p{
+        font-size: 1rem;
+    }
+    .texto-nacho p{
+        font-size: 1rem;
+    }
+}
+    
