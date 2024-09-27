@@ -1,76 +1,44 @@
-const string1 = document.getElementById("string1Sound");
-const string2 = document.getElementById("string2Sound");
-const string3 = document.getElementById("string3Sound");
-const string4 = document.getElementById("string4Sound");
+const stringSounds = [
+    document.getElementById("string1Sound"),
+    document.getElementById("string2Sound"),
+    document.getElementById("string3Sound"),
+    document.getElementById("string4Sound")
+];
 
 const stringElements = document.querySelectorAll(".string");
 
-
+// Reproducción de sonido al hacer clic en las cuerdas
 stringElements.forEach((string, index) => {
     string.addEventListener("click", () => {
+        const sound = stringSounds[index];
+        sound.currentTime = 0; // Reiniciar el sonido si ya se está reproduciendo
+        sound.play();          // Reproducir el sonido
+        string.classList.add("clicked"); // Añadir la clase de animación
 
-        switch (index) {
-            case 0:
-                string1.currentTime = 0;
-                string1.play();
-                break;
-            case 1:
-                string2.currentTime = 0;
-                string2.play();
-                break;
-            case 2:
-                string3.currentTime = 0;
-                string3.play();
-                break;
-            case 3:
-                string4.currentTime = 0;
-                string4.play();
-                break;
-        }
+        // Remover la animación después de que termine la interacción
+        setTimeout(() => {
+            string.classList.remove("clicked");
+        }, 400); // Duración de la animación (0.8s)
     });
 });
 
+// Reproducción de sonido al presionar teclas del teclado
 function playSound(key) {
-    switch (key) {
-        case "a":
-            string1.currentTime = 0;
-            string1.play();
-            break;
-        case "s":
-            string2.currentTime = 0;
-            string2.play();
-            break;
-        case "d":
-            string3.currentTime = 0;
-            string3.play();
-            break;
-        case "f":
-            string4.currentTime = 0;
-            string4.play();
-            break;
+    const soundMap = {
+        "a": stringSounds[0],  // Cuerda 1
+        "s": stringSounds[1],  // Cuerda 2
+        "d": stringSounds[2],  // Cuerda 3
+        "f": stringSounds[3]   // Cuerda 4
+    };
 
+    const sound = soundMap[key];
+    if (sound) {
+        sound.currentTime = 0;
+        sound.play();
     }
 }
 
-
 document.addEventListener("keydown", function (event) {
     const key = event.key.toLowerCase();
-
-    if (key === "a" || key === "s" || key === "d" || key === "f") {
-        playSound(key);
-    }
-});
-// Mejor código
-var strings = document.getElementsByClassName("string");
-
-Array.prototype.forEach.call(strings, function(string) {
-  string.addEventListener("mousedown", function() {
-    var audio = new Audio("sonido.mp3");
-    audio.play();
-    string.classList.add("clicked");
-  });
-
-  string.addEventListener("mouseup", function() {
-    string.classList.remove("clicked");
-  });
+    playSound(key);
 });

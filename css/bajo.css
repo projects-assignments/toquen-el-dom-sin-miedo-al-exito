@@ -1,8 +1,10 @@
 @import url("/css/footer.css") screen;
 @import url("/css/header.css") screen;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;600&display=swap');
+@import url("/css/transition.css");
 
 :root {
+  --bg-primario: #0d0d0d;
   --fretboard-height: 300;
   --number-of-strings: 4;
   --string-height: 10;
@@ -19,7 +21,7 @@
 }
 
 body{
-  background-color: #333333;
+  background-color: var(--bg-primario);
 }
 
 main {
@@ -43,7 +45,6 @@ main {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  background: #333333;
 }
 
 

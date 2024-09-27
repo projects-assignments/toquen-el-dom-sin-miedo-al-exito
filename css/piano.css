@@ -1,12 +1,17 @@
 @import url("/css/header.css");
 @import url("/css/footer.css") screen;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;600&display=swap');
-
+@import url("/css/transition.css");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --bg-primario: #0d0d0d;
+}
+
 main{
     display:flex;
     width: 100%;
@@ -14,7 +19,7 @@ main{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #333;
+    background: var(--bg-primario);
     padding: 0 10px;
     padding-bottom: 10vh;
 }

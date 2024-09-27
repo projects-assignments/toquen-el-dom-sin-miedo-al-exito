@@ -4,6 +4,9 @@
 /* Footer */
 @import url(/css/footer.css);
 
+/* transition */
+@import url(/css/transition.css);
+
 *,
 *::before,
 *::after {
@@ -13,8 +16,8 @@
 
 :root {
     --color-primario: #333333;
-    --bg-primario: #333333;
-    --bg-secundario: #f2d03b;
+    --bg-primario: #0d0d0d;
+    --bg-secundario: #F2D03B;
     --text-color-primario: #ffff;
     --text-color-secundario: #000000;
 }
@@ -22,6 +25,7 @@
 main {
     background: #333333;
 }
+
 
 .head {
     height: 40vh;
@@ -97,7 +101,7 @@ button {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     background: var(--bg-secundario);
-    border-radius: 20px;
+    border-radius: 50px;
     margin-top: 30px;
     border: none;
     transition: .3s ease-in-out;

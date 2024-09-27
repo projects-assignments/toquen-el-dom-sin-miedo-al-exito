@@ -42,7 +42,7 @@ body {
     text-decoration: none;
     color: var(--color2);
     text-align: center;
-    transition: .15s ease-in-out;
+    transition: .35s ease-in-out;
     position: relative;
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
@@ -56,7 +56,7 @@ body {
     width: 0;
     height: 1px;
     background-color: var(--color2);
-    transition: .15s ease-in-out;
+    transition: .35s ease-in-out;
   }
   
   .menu li a:hover::after {
